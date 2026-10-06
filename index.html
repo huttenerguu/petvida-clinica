@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetVida | Clínica Veterinária e Estética Pet</title>
+  <meta name="description" content="Consultas, vacinas, cirurgias e banho e tosa em um só lugar, com o histórico de saúde do seu pet sempre atualizado.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a class="logo" href="#inicio">PetVida</a>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Agendamento</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato" class="btn-menu">Agendar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h1>O banho do seu pet também faz parte da saúde dele.</h1>
+      <p>Na PetVida, consulta, vacina e banho e tosa ficam no mesmo histórico. Você agenda em poucos minutos e recebe lembrete antes de cada retorno.</p>
+      <a class="btn" href="#contato">Agendar horário</a>
+    </section>
+
+    <section id="servicos" class="secao">
+      <h2>Serviços</h2>
+      <div class="grade">
+        <article>
+          <h3>Consultas</h3>
+          <p>Atendimento clínico com a Dra. Camila, o Dr. Gabriel e os veterinários plantonistas.</p>
+        </article>
+        <article>
+          <h3>Vacinação</h3>
+          <p>Calendário de vacinas do seu pet com aviso automático da próxima dose.</p>
+        </article>
+        <article>
+          <h3>Cirurgias de pequeno porte</h3>
+          <p>Procedimentos simples, com acompanhamento antes e depois.</p>
+        </article>
+        <article>
+          <h3>Banho e tosa</h3>
+          <p>Feito por tosadores que conhecem o histórico de saúde do animal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="secao destaque">
+      <h2>Como funciona o agendamento</h2>
+      <ol>
+        <li><strong>Escolha o serviço.</strong> Consulta, vacina ou banho e tosa.</li>
+        <li><strong>Escolha o horário.</strong> Só aparecem horários livres, sem choque na agenda.</li>
+        <li><strong>Receba o lembrete.</strong> Aviso antes da data e quando o retorno preventivo estiver próximo.</li>
+      </ol>
+      <p class="nota">Protótipo de apresentação: o agendamento online será ligado ao sistema da clínica numa próxima etapa.</p>
+    </section>
+
+    <section id="equipe" class="secao">
+      <h2>Equipe</h2>
+      <p>Dr. Gabriel Santos e Dra. Camila Paes, médicos veterinários e sócios fundadores, mais 2 veterinários plantonistas, 3 tosadores e 2 recepcionistas.</p>
+    </section>
+
+    <section id="contato" class="secao destaque">
+      <h2>Agende seu horário</h2>
+      <form onsubmit="event.preventDefault(); document.getElementById('ok').hidden = false;">
+        <label>Nome do tutor
+          <input type="text" required>
+        </label>
+        <label>Nome do pet
+          <input type="text" required>
+        </label>
+        <label>Serviço
+          <select required>
+            <option value="">Selecione</option>
+            <option>Consulta</option>
+            <option>Vacinação</option>
+            <option>Cirurgia de pequeno porte</option>
+            <option>Banho e tosa</option>
+          </select>
+        </label>
+        <label>Data preferida
+          <input type="date" required>
+        </label>
+        <button class="btn" type="submit">Enviar pedido</button>
+        <p id="ok" hidden>Pedido recebido. A recepção confirma o horário com você.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>PetVida · Clínica veterinária e estética pet</p>
+  </footer>
+
+</body>
+</html>
