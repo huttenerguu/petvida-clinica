@@ -2,7 +2,7 @@
 
 Site institucional simples (HTML e CSS) da PetVida, com apresentação dos serviços e um formulário de pedido de agendamento.
 
-**Site publicado:** `https://SEU-USUARIO.github.io/petvida-clinica/` *(substitua após ativar o GitHub Pages)*
+**Site publicado:** `https://huttenerguu.github.io/petvida-clinica/` *(substitua após ativar o GitHub Pages)*
 
 ## 1. Briefing do problema
 
@@ -32,8 +32,6 @@ Página única com as seções:
 | Como funciona o agendamento | Três passos: serviço, horário, lembrete |
 | Equipe | Sócios e time da clínica |
 | Agende seu horário | Formulário de pedido |
-
-Adicione aqui capturas de tela em `docs/` e referencie com `![Tela inicial](docs/home.png)`.
 
 ## 4. Arquitetura
 
